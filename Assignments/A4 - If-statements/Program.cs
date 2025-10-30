@@ -15,7 +15,7 @@ namespace A4___IF_Statements
             string ageInput = Console.ReadLine();
             int age = Convert.ToInt32(ageInput);
 
-            if (age < 0 || age > 18) 
+            if (age < 0 || age > 150) 
             { 
                 Console.WriteLine("Invalid age entered.");
 
@@ -34,3 +34,4 @@ namespace A4___IF_Statements
         }
     }
 }
+
