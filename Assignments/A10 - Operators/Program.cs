@@ -27,6 +27,10 @@ namespace A10___Operators
             //Task 3: increment and decrement
             Console.WriteLine("Increment num6: " + (++num6));
             Console.WriteLine("Decrement num6: " + (--num6));
+            Console.WriteLine("Postfix increment num6++: " + (num6++));
+            Console.WriteLine("After postfix increment: " + num6);
+            Console.WriteLine("Postfix decrement num6--: " + (num6--));
+            Console.WriteLine("After postfix decrement: " + num6);
 
             //Task 4: assignment operators and results using num5
             Console.WriteLine($" num5 += 10: { (num5 += 10) }");
@@ -40,3 +44,4 @@ namespace A10___Operators
         }
     }
 }
+
