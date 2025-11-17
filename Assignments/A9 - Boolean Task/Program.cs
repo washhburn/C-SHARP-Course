@@ -33,7 +33,7 @@ namespace A9___Boolean_Task
             bool isLess = num2 < num4;
             
             Console.WriteLine($"4a - num1 is greater than num3: {isGreater}");
-            Console.WriteLine($"4b - num2 is less than num4: {!isLess}");
+            Console.WriteLine($"4b - num2 is less than num4: {isLess}");
             Console.WriteLine($"4c - num1 is equal to num4: {num1 == num4}");
             Console.WriteLine($"4d - num2 is not equal to num3: {num2 != num3}");
 
@@ -49,3 +49,4 @@ namespace A9___Boolean_Task
         }
     }
 }
+
