@@ -41,7 +41,8 @@ namespace A16___Sort_Reverse_Remove_and_Find
             }
 
             //Task 5: Remove an element
-            Array.Clear(numbers, 1, 1);
+            //Array.Clear(numbers, 1, 1);
+            numbers = numbers.Where(n => n != 78).ToArray();
             Console.WriteLine("\nRemove element 78 from array: ");
             foreach (int numRemove in numbers)
             {
@@ -62,3 +63,4 @@ namespace A16___Sort_Reverse_Remove_and_Find
         }
     }
 }
+
