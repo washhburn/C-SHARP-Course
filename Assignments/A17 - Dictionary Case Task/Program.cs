@@ -32,8 +32,15 @@ namespace A17___Dictionary_Case_Task
                         int newID = int.Parse(Console.ReadLine());
                         Console.Write("Enter Student Name: ");
                         string newName = Console.ReadLine();
-                        students.Add(newID, newName);
-                        Console.WriteLine($"\nStudent {newName} added successfully!");
+                        if (students.ContainsKey(newID))
+                        {
+                           Console.WriteLine($"\nError - A student with ID {newID} already exists.");
+                        }
+                        else
+                        {
+                           students.Add(newID, newName);
+                           Console.WriteLine($"\nStudent {newName} added successfully!");
+                        }
                         break;
 
                     case 2: //Remove student information
@@ -72,3 +79,4 @@ namespace A17___Dictionary_Case_Task
         }
     }
 }
+
