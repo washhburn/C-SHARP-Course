@@ -12,7 +12,7 @@ namespace A14___Array_Multiplication
         {
             //Task 1: Define two integers
             int num = 7;
-            int length = 5;
+            int length = 6;
 
             //Task 2: Create an integer array
             int[] multiplicationArray = new int[length];
@@ -35,3 +35,4 @@ namespace A14___Array_Multiplication
         }
     }
 }
+
