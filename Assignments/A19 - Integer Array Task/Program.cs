@@ -20,18 +20,13 @@ namespace A19___Integer_Array_Task
             int sum = SumOfNumbers(numbers);
 
             //Task 6: If statement to check if value > -1
-            if (sum > -1)
+            if (numbers.Length == 0)
             {
-                Console.WriteLine($"The total is: {sum}.");
-            }
-            //Task 7: If statement to handle negative values
-            else if (sum < 0)
-            {
-                Console.WriteLine("Cannot add up an empty tray.");
+                Console.WriteLine("Cannot add up an empty array.");
             }
             else
             {
-                Console.WriteLine("Cannot add up an empty array.");
+                Console.WriteLine($"The total is: {sum}.");
             }
         }
         //Task 2: SumOfNumbers function
@@ -48,3 +43,4 @@ namespace A19___Integer_Array_Task
         }
     }
 }
+
