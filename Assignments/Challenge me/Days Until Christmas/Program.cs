@@ -20,6 +20,7 @@ namespace DaysUntilChristmas
 
             var daysUntilChristmas = (XmasDay - dateToday).Days;
 
+            //Check if today is Christmas Day or how many days are left until Christmas
             if (dateToday == XmasDay)
             {
                 Console.WriteLine($"Today is Christmas Day!");
