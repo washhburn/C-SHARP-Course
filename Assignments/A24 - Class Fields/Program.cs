@@ -43,7 +43,7 @@ namespace A24___ClassFields
 
         public string GetLastName()
         {
-            return this.FirstName;
+            return this.LastName;
         }
 
         public void SetAge(int age)
@@ -107,3 +107,4 @@ namespace A24___ClassFields
 
     }
 }
+
