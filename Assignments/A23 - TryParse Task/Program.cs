@@ -36,25 +36,24 @@ namespace A23___TryParse_Task
             //Instead TryParse should be used in situations where it would be common for errors to occur
 
             //Task 5: Custom Parse function
+            bool success = false;
 
-            bool success = true;
-
-            while (success)
+            while (!success)
             {
-                Console.Write("Enter a number: ");
-                string numInput = Console.ReadLine();
+               Console.Write("Enter a number: ");
+               string numInput = Console.ReadLine();
 
-
-                if (int.TryParse(numInput, out int num))
-                {
-                    success = true;
-                    Console.WriteLine("Conversion succeded: " + num);
-                }
-                else
-                {
-                    Console.WriteLine("Failed to convert");
-                }
+               if (int.TryParse(numInput, out int num))
+               {
+                   success = true;
+                   Console.WriteLine("Conversion succeeded: " + num);
+               }
+               else
+               {
+                   Console.WriteLine("Failed to convert");
+               }
             }
         }
     }
 }
+
